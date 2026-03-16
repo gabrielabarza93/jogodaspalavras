@@ -1,10 +1,10 @@
 // Lista de palavras simples (5 letras)
 const listaPalavras = [
   "cacho", "papai", "mamãe", "amigo", "livro", "carta", "bolas", "nuvem", "casas", "feira",
-  "janela", "porta", "banho", "sabao", "leite", "brinc", "couro", "cabra", "limao", "roupa",
+  "janela", "porta", "banho", "sabao", "leite", "criar", "couro", "cabra", "limao", "roupa",
   "doce", "fruta", "verde", "amora", "pato", "gato", "caome", "pente", "banco", "moeda",
   "clube", "jogo", "vovo", "cesta", "festa", "amiga", "comer", "beber", "andar", "correr",
-  "pular", "chefe", "noite", "tarde", "solta", "chuva"
+  "pular", "chefe", "noite", "tarde", "solta", "chuva", "filme", "ideal"
 ];
 
 // Base da data: 1 de janeiro de 2024
