@@ -64,3 +64,33 @@ function mostrarTentativa(guess) {
 
   document.getElementById("game").appendChild(row);
 }
+
+/* Modal de regras */
+const rulesModal = document.getElementById("rulesModal");
+const openRules = document.getElementById("openRules");
+const closeRules = document.getElementById("closeRules");
+
+function openModal() {
+  rulesModal.classList.add("open");
+  rulesModal.setAttribute("aria-hidden", "false");
+}
+
+function closeModal() {
+  rulesModal.classList.remove("open");
+  rulesModal.setAttribute("aria-hidden", "true");
+}
+
+openRules.addEventListener("click", openModal);
+closeRules.addEventListener("click", closeModal);
+
+rulesModal.addEventListener("click", (e) => {
+  if (e.target.dataset.close === "true") {
+    closeModal();
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeModal();
+  }
+});
