@@ -8,10 +8,32 @@
 </head>
 <body>
   <h1>Jogo das Palavras</h1>
+
+  <div class="actions">
+    <button id="openRules" type="button">Regras</button>
+  </div>
+
   <div id="game"></div>
   <input type="text" id="guessInput" maxlength="5" placeholder="Digite uma palavra" />
   <button onclick="submitGuess()">Enviar</button>
   <p id="mensagem"></p>
+
+  <div class="modal" id="rulesModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="rulesTitle">
+      <div class="modal-header">
+        <h2 id="rulesTitle">Como jogar</h2>
+        <button class="close-btn" id="closeRules" type="button" aria-label="Fechar">×</button>
+      </div>
+      <p class="rules-text">Descubra a palavra secreta em até 6 tentativas. Cada tentativa deve ter 5 letras.</p>
+      <p class="rules-text">As cores indicam se a letra está no lugar certo, apenas existe na palavra, ou não aparece.</p>
+      <div class="legend">
+        <span class="chip correct">Certa</span>
+        <span class="chip present">Existe</span>
+        <span class="chip absent">Não tem</span>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
